@@ -1,0 +1,103 @@
+1: What is control flow in JavaScript? Explain how if-else statements work withan example.
+
+ans = 
+
+        Control flow in JavaScript means the order in which code runs. It helps the program make decisions based on conditions.
+
+        JavaScript uses control flow statements like:
+
+        - if
+        - else if
+        - else
+        - switch
+        - loops (for, while)
+
+        How if-else works:
+            if checks a condition.
+            If condition is true, code inside if runs.
+            If condition is false, code inside else runs.
+
+
+        Syntax:
+                if(condition){
+                    // code runs if true
+                }
+                else{
+                    // code runs if false
+                }
+
+        Example:
+                let age = 18;
+
+                if(age >= 18){
+                    console.log("You can vote");
+                }
+                else{
+                    console.log("You cannot vote");
+                }
+
+        Output:
+                You can vote
+
+
+
+
+
+2: Describe how switch statements work in JavaScript. When should you use a switch statement instead of if-else?
+
+ans = 
+
+        A switch statement is used when we want to check one variable against many possible values.
+
+        Instead of writing many if-else conditions, we can use switch.
+
+
+        Syntax:
+
+            switch(value){
+                case 1:
+                    // code
+                    break;
+
+                case 2:
+                    // code
+                    break;
+
+                default:
+                    // code
+            }
+
+
+        Example:
+
+                let day = 1;
+
+                switch(day){
+                    case 1:
+                        console.log("Monday");
+                        break;
+
+                    case 2:
+                        console.log("Tuesday");
+                        break;
+
+                    default:
+                        console.log("Invalid day");
+                }
+
+        Output:
+                Monday
+
+
+        When to use switch instead of if-else
+
+        Use switch when:
+
+                    Checking one variable
+                    There are many possible values
+                    Code needs to be clean and easy to read
+
+        Use if-else when:
+
+                    Conditions are complex (>, <, &&, ||)
+                    Need range checking         

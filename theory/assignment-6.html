@@ -1,0 +1,107 @@
+1: What are functions in JavaScript? Explain the syntax for declaring and calling a function.
+
+
+ans =
+
+       Functions in JavaScript are blocks of code designed to perform a specific task.
+
+       They help in reusing code and making programs more organized.
+
+        Function Declaration Syntax:
+                            function functionName(parameters){
+                                // code
+                            }
+                            
+        Calling a Function:
+                        functionName();
+
+        Example:
+                function sayHello(){
+                    console.log("Hello World");
+                }
+
+        sayHello(); // calling function
+
+        Output:
+                Hello World 
+
+
+
+
+
+
+2: What is the difference between a function declaration and a function expression?
+
+
+ans = 
+
+       Function Declaration:
+
+                    - Defined using function keyword.
+                    - Can be called before or after declaration.
+
+        Example:
+
+                sayHi();
+
+                function sayHi(){
+                    console.log("Hi");
+                }
+
+
+        Function Expression:
+
+                        - Function is stored in a variable.
+                        - Can only be called after declaration.
+
+        Example:
+
+                let greet = function(){
+                    console.log("Hello");
+                };
+
+                greet();
+
+
+        Difference Table:
+
+        Function Declaration	                       Function Expression
+
+        - Declared using function	                   - Stored in variable
+        - Can call before defining	                   - Cannot call before defining
+        - Hoisted	                                   - Not fully hoisted         
+
+
+
+
+
+3: Discuss the concept of parameters and return values in functions.
+
+ans = 
+
+        Parameters
+            - Inputs passed to a function.
+            - Used to make functions flexible.
+
+        Example:
+
+                function greet(name){
+                    console.log("Hello " + name);
+                }
+
+                greet("Dharmik");
+
+        Return Values:
+                    A function can send back a result using return.
+
+        Example:
+
+                function add(a, b){
+                    return a + b;
+                }
+
+                let result = add(5, 3);
+                console.log(result);
+
+        Output:
+                8

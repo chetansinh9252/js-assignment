@@ -1,0 +1,144 @@
+1: What are the different types of operators in JavaScript? Explain with examples.Arithmetic operators, Assignment operators,Comparison operators, Logical operators
+
+ans =
+
+       Operators in JavaScript are symbols used to perform operations on values and variables.
+
+Main types of operators:
+
+            1) Arithmetic Operators
+
+            Used for mathematical calculations.
+
+            Operator	      Meaning	                       Example	    Result
+
+                +	          Addition	                        10 + 5	      15
+
+                -	          Subtraction	                    10 - 5	      5
+
+                *	          Multiplication	                10 * 5	      50
+
+                /	          Division	                        10 / 5	      2
+
+                %	          Modulus (Remainder)	            10 % 3	      1
+
+                ++	          Increment	                        a++	        Increase by 1
+
+                --	          Decrement	                        a--	        Decrease by 1
+
+            Example:
+
+                    let a = 10;
+                    let b = 5;
+
+                    console.log(a + b);
+                    console.log(a - b);
+                    console.log(a * b);
+                    console.log(a / b);
+
+
+
+            2) Assignment Operators
+
+            Used to assign values.
+
+            Operator	               Example	                 Meaning
+
+                =	                    x = 10	                 Assign value
+
+                +=	                    x += 5	                 x = x + 5
+
+                -=	                    x -= 5	                 x = x - 5
+
+                *=	                    x *= 2	                 x = x * 2
+
+                /=	                    x /= 2	                 x = x / 2
+
+            Example:
+
+                    let x = 10;
+                    x += 5;
+                    console.log(x); // 15
+
+
+
+            3) Comparison Operators
+
+            Used to compare values.
+
+            Operator	        Meaning	                      Example
+
+                ==	            Equal to	                  5 == "5"
+
+                ===	            Strict equal	              5 === "5"
+
+                !=	            Not equal	                  5 != 4
+
+                >	            Greater than	              10 > 5
+
+                <	            Less than	                  5 < 10
+
+                >=	            Greater than or equal	      10 >= 10
+
+                <=	            Less than or equal	          5 <= 10
+
+            Example:
+
+                    console.log(10 > 5); // true
+                    console.log(10 == "10"); // true
+
+
+
+
+            4) Logical Operators
+
+            Used to combine conditions.
+
+            Operator	          Meaning	          Example
+
+                &&	               AND	              true && true
+
+                ||	               OR	              true || false
+
+                !	               NOT	              !true
+
+            Example:
+
+                    let a = 20;
+                    let b = 3;
+
+                    console.log(a > 10 && b < 5); // true 
+
+
+
+
+
+2: What is the difference between== and=== in JavaScript?
+
+ans = 
+
+        == (Loose Equality):
+
+           - Compares only value.
+           - Data type can be different.
+
+        Example:
+                console.log(5 == "5"); // true
+
+            Because JavaScript converts "5" string into number.
+
+
+
+        === (Strict Equality):
+
+            - Compares value + data type.
+            - No type conversion.
+
+        Example:
+                console.log(5 === "5"); // false
+
+        Because:
+                5 → Number
+                "5" → String
+
+        Different data types = false.

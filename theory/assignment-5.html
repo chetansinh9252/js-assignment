@@ -1,0 +1,133 @@
+1: Explain the different types of loops in JavaScript (for, while, do-while). Provide abasic example of each.
+
+ans = 
+
+        Loops in JavaScript are used to run the same block of code multiple times until a condition becomes false.
+
+        There are 3 main types of loops in JavaScript:
+
+
+
+        1) for Loop
+
+        A for loop is used when we know how many times we want to run the loop.
+
+        Syntax:
+
+                for(initialization; condition; increment/decrement){
+                    // code
+                }
+
+        Example:
+
+                for(let i = 1; i <= 5; i++){
+                    console.log(i);
+                }
+
+        Output:
+
+                1
+                2
+                3
+                4
+                5
+
+
+
+
+        2) while Loop
+
+        A while loop runs as long as the condition is true.
+
+        Syntax:
+
+                while(condition){
+                    // code
+                }
+
+        Example:
+
+                let i = 1;
+
+                while(i <= 5){
+                    console.log(i);
+                    i++;
+                }
+
+        Output:
+
+                1
+                2
+                3
+                4
+                5
+
+
+
+
+        3) do-while Loop
+
+        A do-while loop runs the code at least one time, then checks the condition.
+
+        Syntax:
+
+                do{
+                    // code
+                }while(condition);
+
+        Example:
+
+                let i = 1;
+
+                do{
+                    console.log(i);
+                    i++;
+                }while(i <= 5);
+
+        Output:
+
+            1
+            2
+            3
+            4
+            5
+
+
+
+
+
+2: What is the difference between a while loop and a do-while loop?
+
+ans = 
+
+        while Loop	                            do-while Loop
+
+        - Checks condition first	            - Runs code first, checks condition later
+
+        - May run 0 times	                    - Runs at least 1 time
+
+        - Condition at beginning	            - Condition at end
+
+
+        Example of while:
+                        let i = 10;
+
+                        while(i < 5){
+                            console.log(i);
+                        }
+
+        Output: Nothing prints because condition is false.
+
+
+        Example of do-while:
+                        let i = 10;
+
+                        do{
+                            console.log(i);
+                        }while(i < 5);
+
+        Output:
+                10
+
+        It prints once because do block runs first.
+        
